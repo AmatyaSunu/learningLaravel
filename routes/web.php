@@ -19,6 +19,6 @@ Route::get('about', function(){
   $karkhana = ['this', 'is', 'quiz','site'];
   return view('about')->withname($karkhana);
 });*/
-route::get('/','homeController@welcome');
+route::get('/','homeController@index');
 route::get('about','homeController@about');
 route::resource('songs','songsController');

@@ -3,17 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+//use DB;
+use App\user;
 
 class homeController extends Controller
 {
-    public function welcome()
+    public function index()
     {
 
-      return view('welcome');
-    }
-    public function about()
-    {
-
-      return view('about');
+     $role = user::find(1)->roles;
+          return $role;
+      //return view('welcome',compact('role'));
     }
 }

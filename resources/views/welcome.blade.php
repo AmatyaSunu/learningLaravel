@@ -3,5 +3,9 @@
 @section('title','Welcome')
 
 @section('body')
-Laravel Startup
-@endsection
+welcome
+<!-- @foreach ($mobiles as $mobile)
+<h4> {{$mobile->number}}</h4>
+@endforeach
+ -->@endsection
+
